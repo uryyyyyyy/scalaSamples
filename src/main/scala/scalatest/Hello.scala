@@ -1,7 +1,7 @@
 package scalatest
 
 object Hello {
-  def main(args: Array[String]): Unit = {
+  def main(): Unit = {
     println("Hello, world!")
   }
 }
