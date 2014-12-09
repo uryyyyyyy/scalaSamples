@@ -9,5 +9,6 @@ libraryDependencies ++= Seq(
 	"com.amazonaws" % "aws-java-sdk" % "1.6.8",
 	"org.scalatest" %% "scalatest" % "2.1.6" % "test",
 	"org.scalaz" %% "scalaz-core" % "7.1.0",
-	"com.typesafe.akka" %% "akka-actor" % "2.3.4"
+	"com.typesafe.akka" %% "akka-actor" % "2.3.4",
+	"org.apache.commons" % "commons-email" % "1.3.3"
 )
