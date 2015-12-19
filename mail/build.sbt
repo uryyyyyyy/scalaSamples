@@ -7,5 +7,3 @@ scalaVersion := "2.11.7"
 libraryDependencies ++= Seq(
 	"org.apache.commons" % "commons-email" % "1.3.3"
 )
-
-scalacOptions in Test ++= Seq("-Yrangepos")

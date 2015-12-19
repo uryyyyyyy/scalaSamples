@@ -17,6 +17,9 @@ lazy val scalaz = (project in file("scalaz")).
 lazy val aws = (project in file("aws")).
 		settings(commonSettings: _*)
 
+lazy val scalikejdbc = (project in file("scalikejdbc")).
+		settings(commonSettings: _*)
+
 lazy val akka = (project in file("akka")).
 		settings(commonSettings: _*)
 
