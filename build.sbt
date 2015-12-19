@@ -31,3 +31,6 @@ lazy val mail = (project in file("mail")).
 
 lazy val scalaTest = (project in file("scalaTest")).
 		settings(commonSettings: _*)
+
+lazy val scalajs = (project in file("scalajs")).
+		settings(commonSettings: _*)
