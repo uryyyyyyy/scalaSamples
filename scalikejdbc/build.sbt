@@ -1,4 +1,4 @@
-name := """mailSample"""
+name := """scalikejdbcSample"""
 
 version := "1.0"
 

@@ -2,9 +2,10 @@ package com.github.uryyyyyyy.samples.scalikejdbc
 
 import java.time.ZonedDateTime
 
+import com.github.uryyyyyyy.samples.scalikejdbc.dao.Article
 import scalikejdbc._
 
-object MailSenderSpec {
+object MainSpec {
 
 	def main(args: Array[String]): Unit ={
 		Class.forName("com.mysql.jdbc.Driver")
