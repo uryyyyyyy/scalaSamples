@@ -1,14 +1,30 @@
+
 name := """scalaSamples"""
 
 version := "1.0"
 
-scalaVersion := "2.11.1"
-
-libraryDependencies ++= Seq(
-	"org.scalatest" %% "scalatest" % "2.1.6" % "test",
-	"com.amazonaws" % "aws-java-sdk" % "1.6.8",
-	"org.scalatest" %% "scalatest" % "2.1.6" % "test",
-	"org.scalaz" %% "scalaz-core" % "7.1.0",
-	"com.typesafe.akka" %% "akka-actor" % "2.3.4",
-	"org.apache.commons" % "commons-email" % "1.3.3"
+lazy val commonSettings = Seq(
+	organization := "com.github.uryyyyyyy",
+	scalaVersion := "2.11.7"
 )
+
+lazy val specs2 = (project in file("specs2")).
+		settings(commonSettings: _*)
+
+lazy val scalaz = (project in file("scalaz")).
+		settings(commonSettings: _*)
+
+lazy val aws = (project in file("aws")).
+		settings(commonSettings: _*)
+
+lazy val akka = (project in file("akka")).
+		settings(commonSettings: _*)
+
+lazy val httpClient = (project in file("httpClient")).
+		settings(commonSettings: _*)
+
+lazy val mail = (project in file("mail")).
+		settings(commonSettings: _*)
+
+lazy val scalaTest = (project in file("scalaTest")).
+		settings(commonSettings: _*)
