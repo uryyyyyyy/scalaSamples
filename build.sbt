@@ -40,3 +40,6 @@ lazy val diPattern = (project in file("diPattern")).
 
 lazy val play = (project in file("play")).
 		settings(commonSettings: _*)
+
+lazy val slick = (project in file("slick")).
+		settings(commonSettings: _*)
