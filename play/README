@@ -1,0 +1,18 @@
+This is your new Play application
+=================================
+
+
+## run
+
+```
+
+```
+
+access
+
+get: http://localhost:9000/get
+get: http://localhost:9000/query?str=ss
+get: http://localhost:9000/params/100/
+post: http://localhost:9000/post (Content-type: application/json, body: {"id":11,"name":"inTopic"})
+
+get: http://localhost:9000/public/images/favicon.png
