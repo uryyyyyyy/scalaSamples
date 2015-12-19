@@ -34,3 +34,6 @@ lazy val scalaTest = (project in file("scalaTest")).
 
 lazy val scalajs = (project in file("scalajs")).
 		settings(commonSettings: _*)
+
+lazy val diPattern = (project in file("diPattern")).
+		settings(commonSettings: _*)
