@@ -1,4 +1,3 @@
-
 name := """scalaSamples"""
 
 version := "1.0"
@@ -42,4 +41,19 @@ lazy val play = (project in file("play")).
 		settings(commonSettings: _*)
 
 lazy val slick = (project in file("slick")).
+		settings(commonSettings: _*)
+
+lazy val javaAWT = (project in file("javaAWT")).
+		settings(commonSettings: _*)
+
+lazy val scalaIO = (project in file("scalaIO")).
+		settings(commonSettings: _*)
+
+lazy val macros = (project in file("macros")).
+		settings(commonSettings: _*)
+
+lazy val kuromoji = (project in file("kuromoji")).
+		settings(commonSettings: _*)
+
+lazy val googleAPI = (project in file("googleAPI")).
 		settings(commonSettings: _*)
