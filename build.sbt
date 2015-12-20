@@ -67,3 +67,6 @@ lazy val fp = (project in file("fp")).
 
 lazy val config = (project in file("config")).
 		settings(commonSettings: _*)
+
+lazy val shapeless = (project in file("shapeless")).
+		settings(commonSettings: _*)
