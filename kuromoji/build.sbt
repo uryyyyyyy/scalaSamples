@@ -10,5 +10,7 @@ libraryDependencies ++= Seq(
 	"com.atilika.kuromoji" % "kuromoji-ipadic" % "0.9.0",
 	"org.apache.lucene"    %  "lucene-core"               % luceneVersion,
 	"org.apache.lucene"    %  "lucene-analyzers-common"   % luceneVersion,
-	"org.apache.lucene"    %  "lucene-analyzers-kuromoji" % luceneVersion
+	"org.apache.lucene"    %  "lucene-analyzers-kuromoji" % luceneVersion,
+	"org.apache.lucene"    %  "lucene-suggest"            % luceneVersion,
+	"org.scalatest" %% "scalatest" % "2.2.5" % "test"
 )
