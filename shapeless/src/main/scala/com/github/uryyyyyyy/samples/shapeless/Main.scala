@@ -15,5 +15,12 @@ object Main{
 
 		val ss = plus1All(User(1, "bob"))
 		println(ss)// User(2,bob1)
+
+
+		//Peano axioms
+		println(Nat.toInt[_0])
+		println(Nat.toInt[Succ[_0]])
+		println(Nat.toInt[Succ[Succ[_0]]])
+		println(Nat.toInt[Succ[Succ[Succ[_0]]]])
 	}
 }
