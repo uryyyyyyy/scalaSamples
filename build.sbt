@@ -49,8 +49,13 @@ lazy val javaAWT = (project in file("javaAWT")).
 lazy val scalaIO = (project in file("scalaIO")).
 		settings(commonSettings: _*)
 
-lazy val macros = (project in file("macros")).
+lazy val macroDefine = (project in file("macroDefine")).
 		settings(commonSettings: _*)
+
+
+lazy val macroUse = (project in file("macroUse"))
+		.settings(commonSettings: _*)
+		.dependsOn(macroDefine)
 
 lazy val kuromoji = (project in file("kuromoji")).
 		settings(commonSettings: _*)
