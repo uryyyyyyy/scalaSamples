@@ -52,7 +52,6 @@ lazy val scalaIO = (project in file("scalaIO")).
 lazy val macroDefine = (project in file("macroDefine")).
 		settings(commonSettings: _*)
 
-
 lazy val macroUse = (project in file("macroUse"))
 		.settings(commonSettings: _*)
 		.dependsOn(macroDefine)
@@ -61,4 +60,10 @@ lazy val kuromoji = (project in file("kuromoji")).
 		settings(commonSettings: _*)
 
 lazy val googleAPI = (project in file("googleAPI")).
+		settings(commonSettings: _*)
+
+lazy val fp = (project in file("fp")).
+		settings(commonSettings: _*)
+
+lazy val config = (project in file("config")).
 		settings(commonSettings: _*)
