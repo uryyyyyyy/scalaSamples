@@ -1,3 +1,5 @@
+import sbt._
+
 name := """scalaSamples"""
 
 version := "1.0"
