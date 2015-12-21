@@ -76,3 +76,6 @@ lazy val nscalaTime = (project in file("nscalaTime")).
 
 lazy val scopt = (project in file("scopt")).
 	settings(commonSettings: _*)
+
+lazy val poiScala = (project in file("poiScala")).
+	settings(commonSettings: _*)

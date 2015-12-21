@@ -1,4 +1,4 @@
-package com.github.uryyyyyyy.samples.scopt
+package com.github.uryyyyyyy.samples.poiScala
 
 object BrowserObjectSpec {
 
