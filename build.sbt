@@ -70,3 +70,9 @@ lazy val config = (project in file("config")).
 
 lazy val shapeless = (project in file("shapeless")).
 		settings(commonSettings: _*)
+
+lazy val nscalaTime = (project in file("nscalaTime")).
+	settings(commonSettings: _*)
+
+lazy val scopt = (project in file("scopt")).
+	settings(commonSettings: _*)
