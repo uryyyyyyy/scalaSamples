@@ -2,14 +2,6 @@ package com.github.uryyyyyyy.samples.poiScala
 
 import info.folone.scala.poi._
 
-import scalaz._
-
-import syntax.monoid._
-
-import syntax.foldable._
-
-import std.list._
-
 object Main{
 	def main (args: Array[String] ) {
 		val sheetOne = Workbook {
