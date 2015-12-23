@@ -30,7 +30,7 @@ object Main {
 		printExecutionTime{
 			val futureList = list.map(v => {
 				val actor = system.actorOf(Props[MyActor])
-				actor.ask(v)(timeout).mapTo[String]
+				actor.ask(v)(timeout).mapTo[Int]
 			})
 			val str = Await.result(Future.sequence(futureList), Duration.Inf)
 				.foldLeft("")((l, r) => l + "\n"+ r)

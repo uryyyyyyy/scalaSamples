@@ -2,9 +2,10 @@ package com.github.uryyyyyyy.samples.akka.sample.parallel
 
 object Util {
 
-	def heavyMethod(i:Int) :String = {
+	def heavyMethod(i:Int) :Int = {
 		Thread.sleep(200)
-		s"heavyMethod result. - $i"
+		println(s"heavyMethod result. - $i")
+		i
 	}
 
 }

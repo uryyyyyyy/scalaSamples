@@ -8,6 +8,7 @@ object Main {
 		val system = ActorSystem()
 		val actor = system.actorOf(Props[MyActor])
 		val res:Unit = actor.tell("HelloWorld!", ActorRef.noSender)
+		val res2:Unit = actor ! "HelloWorld!"
 		system.shutdown()
 	}
 
