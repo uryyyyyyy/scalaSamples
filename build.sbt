@@ -45,9 +45,6 @@ lazy val play = (project in file("play")).
 lazy val slick = (project in file("slick")).
 		settings(commonSettings: _*)
 
-lazy val javaAWT = (project in file("javaAWT")).
-		settings(commonSettings: _*)
-
 lazy val scalaIO = (project in file("scalaIO")).
 		settings(commonSettings: _*)
 
