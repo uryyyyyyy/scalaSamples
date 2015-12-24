@@ -12,6 +12,8 @@ libraryDependencies ++= Seq(
 	"io.kamon" %% "kamon-core" % kamonVersion,
 	"io.kamon" %% "kamon-akka" % kamonVersion,
 	"io.kamon" %% "kamon-spray" % kamonVersion,
+	"io.kamon" %% "kamon-annotation" % kamonVersion,
+	"io.kamon" %% "kamon-log-reporter" % kamonVersion,
 	"com.typesafe.akka" %% "akka-slf4j" % "2.3.14"
 )
 

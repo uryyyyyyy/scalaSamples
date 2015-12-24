@@ -6,16 +6,19 @@ object Main {
 
 	def main(args: Array[String]): Unit = {
 		Kamon.start()
+		println("started")
 
-		val someHistogram = Kamon.metrics.histogram("some-histogram")
-		val someCounter = Kamon.metrics.counter("some-counter")
+		Thread.sleep(11000)
+		val counter = new KamonCounter()
+		counter.say()
+		counter.say()
+		counter.say()
 
-		someHistogram.record(42)
-		someHistogram.record(50)
-		someCounter.increment()
+		Thread.sleep(11000)
 
 		// This application wont terminate unless you shutdown Kamon.
 		Kamon.shutdown()
+		println("finished")
 	}
 
 }
