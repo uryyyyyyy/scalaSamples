@@ -61,8 +61,6 @@ lazy val googleAPI = (project in file("googleAPI")).
 lazy val fp = (project in file("fp")).
 		settings(commonSettings: _*)
 
-lazy val config = (project in file("config")).
-		settings(commonSettings: _*)
 
 lazy val shapeless = (project in file("shapeless")).
 		settings(commonSettings: _*)
@@ -74,4 +72,7 @@ lazy val scopt = (project in file("scopt")).
 	settings(commonSettings: _*)
 
 lazy val poiScala = (project in file("poiScala")).
+	settings(commonSettings: _*)
+
+lazy val ficus = (project in file("ficus")).
 	settings(commonSettings: _*)

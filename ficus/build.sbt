@@ -1,9 +1,9 @@
-name := """configSample"""
+name := """ficusSample"""
 
 version := "1.0"
 
 scalaVersion := "2.11.7"
 
 libraryDependencies ++= Seq(
-	"com.typesafe" % "config" % "1.3.0"
+	"net.ceedubs" %% "ficus" % "1.1.2"
 )
