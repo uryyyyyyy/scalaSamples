@@ -2,20 +2,17 @@ package com.github.uryyyyyyy.samples.awsSdk
 
 import java.io.File
 
-import com.amazonaws.auth.BasicAWSCredentials
+import com.amazonaws.auth.{EnvironmentVariableCredentialsProvider, BasicAWSCredentials}
 import com.amazonaws.services.s3.AmazonS3Client
 import com.amazonaws.services.s3.model.{GetObjectRequest, ListObjectsRequest, PutObjectRequest}
 import com.amazonaws.services.s3.transfer.TransferManager
 
 
 object S3Client {
-	val AWS_ACCESS_KEY = ""
-	val AWS_SECRET_KEY = ""
 
 	def post = {
 
-		val credentials = new BasicAWSCredentials(AWS_ACCESS_KEY, AWS_SECRET_KEY)
-		val s3Client = new AmazonS3Client(credentials)
+		val s3Client = new AmazonS3Client(new EnvironmentVariableCredentialsProvider())
 		print("user認証クリア")
 		val localFile = new File("./test.txt")
 		val s3BucketName = "uryyyyyyy"
@@ -25,7 +22,6 @@ object S3Client {
 	}
 
 	def download() = {
-		val credentials = new BasicAWSCredentials(AWS_ACCESS_KEY, AWS_SECRET_KEY)
 
 		//バケット名
 		val s3BucketName ="uryyyyyyy"
@@ -38,7 +34,7 @@ object S3Client {
 		val downloadingFile = new File("./test/test.txt" + ".tmp")
 
 		val req = new GetObjectRequest(s3BucketName, s3ObjectPath)
-		val tm = new TransferManager(credentials)
+		val tm = new TransferManager(new EnvironmentVariableCredentialsProvider())
 		val s3Obj = new AmazonS3Client().getObject(req)
 
 		try {
@@ -70,9 +66,8 @@ object S3Client {
 	}
 
 	def list() = {
-		val credentials = new BasicAWSCredentials(AWS_ACCESS_KEY, AWS_SECRET_KEY)
 
-		val s3Client = new AmazonS3Client(credentials)
+		val s3Client = new AmazonS3Client(new EnvironmentVariableCredentialsProvider())
 
 		val s3BucketName = "uryyyyyyy"
 		val s3FilePath = ""

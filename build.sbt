@@ -82,3 +82,6 @@ lazy val spray = (project in file("spray")).
 
 lazy val kamon = (project in file("kamon")).
 	settings(commonSettings: _*)
+
+lazy val future = (project in file("future")).
+		settings(commonSettings: _*)
