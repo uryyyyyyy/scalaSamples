@@ -27,9 +27,6 @@ lazy val akka = (project in file("akka")).
 lazy val httpClient = (project in file("httpClient")).
 		settings(commonSettings: _*)
 
-lazy val mail = (project in file("mail")).
-		settings(commonSettings: _*)
-
 lazy val scalaTest = (project in file("scalaTest")).
 		settings(commonSettings: _*)
 
