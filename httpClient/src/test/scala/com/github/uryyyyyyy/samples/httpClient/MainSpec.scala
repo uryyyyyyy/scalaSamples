@@ -1,5 +1,6 @@
 package com.github.uryyyyyyy.samples.httpClient
 
+import com.github.uryyyyyyy.samples.httpClient.playWS.{Messagee, Main}
 import com.ning.http.client.AsyncHttpClientConfig
 import play.api.libs.json.Json
 import play.api.libs.ws.ning.{NingAsyncHttpClientConfigBuilder, NingWSClient, NingWSClientConfig}

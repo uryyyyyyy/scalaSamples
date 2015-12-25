@@ -1,4 +1,5 @@
-package com.github.uryyyyyyy.samples.httpClient
+package com.github.uryyyyyyy.samples.httpClient.scalaj
+
 import scalaj.http._
 
 object HttpClient {

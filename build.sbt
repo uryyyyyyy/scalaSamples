@@ -88,3 +88,7 @@ lazy val future = (project in file("future")).
 
 lazy val finagle = (project in file("finagle")).
 	settings(commonSettings: _*)
+
+lazy val gatling = (project in file("gatling")).
+	settings(commonSettings: _*)
+
