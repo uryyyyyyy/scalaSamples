@@ -1,4 +1,4 @@
-package com.github.uryyyyyyy.samples.httpClient
+package com.github.uryyyyyyy.samples.httpClient.playWS
 
 import play.api.libs.json.JsValue
 import play.api.libs.ws.ning.NingWSClient
