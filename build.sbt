@@ -107,9 +107,6 @@ lazy val ficus = (project in file("ficus"))
 	.settings(commonSettings: _*)
 	.settings(ficusSettings: _*)
 
-lazy val spray = (project in file("spray")).
-	settings(commonSettings: _*)
-
 lazy val kamon = (project in file("kamon")).
 	settings(commonSettings: _*)
 
