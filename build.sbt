@@ -35,10 +35,6 @@ lazy val awsSDKSettings = Seq(
 	)
 )
 
-
-lazy val specs2 = (project in file("specs2")).
-	settings(commonSettings: _*)
-
 lazy val scalaz = (project in file("scalaz")).
 	settings(commonSettings: _*)
 
@@ -50,9 +46,6 @@ lazy val scalikejdbc = (project in file("scalikejdbc")).
 	settings(commonSettings: _*)
 
 lazy val httpClient = (project in file("httpClient")).
-	settings(commonSettings: _*)
-
-lazy val scalaTest = (project in file("scalaTest")).
 	settings(commonSettings: _*)
 
 lazy val scalajs = (project in file("scalajs")).
