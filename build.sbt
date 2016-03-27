@@ -21,9 +21,6 @@ lazy val aws = (project in file("aws")).
 lazy val scalikejdbc = (project in file("scalikejdbc")).
 		settings(commonSettings: _*)
 
-lazy val akka = (project in file("akka")).
-		settings(commonSettings: _*)
-
 lazy val httpClient = (project in file("httpClient")).
 		settings(commonSettings: _*)
 
@@ -59,10 +56,6 @@ lazy val googleAPI = (project in file("googleAPI")).
 		settings(commonSettings: _*)
 
 lazy val fp = (project in file("fp")).
-		settings(commonSettings: _*)
-
-
-lazy val shapeless = (project in file("shapeless")).
 		settings(commonSettings: _*)
 
 lazy val nscalaTime = (project in file("nscalaTime")).
