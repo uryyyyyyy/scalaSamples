@@ -35,9 +35,6 @@ lazy val awsSDKSettings = Seq(
 	)
 )
 
-lazy val scalaz = (project in file("scalaz")).
-	settings(commonSettings: _*)
-
 lazy val aws = (project in file("aws"))
 	.settings(commonSettings: _*)
 	.settings(awsSDKSettings: _*)
